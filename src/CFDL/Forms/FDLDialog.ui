@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>713</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>FDL - PyQt5 Downloader</string>
+  </property>
+  <widget class="QWidget" name="fdldialog"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>713</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="mTaskMenu">
+    <property name="title">
+     <string>任务</string>
+    </property>
+    <addaction name="mAddNewTaskAction"/>
+    <addaction name="mExitAction"/>
+   </widget>
+   <widget class="QMenu" name="mFileMenu">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="mStopDownloadAction"/>
+   </widget>
+   <widget class="QMenu" name="mDownloadMenu">
+    <property name="title">
+     <string>下载</string>
+    </property>
+    <addaction name="mOptionalAction"/>
+   </widget>
+   <widget class="QMenu" name="mHelpMenu">
+    <property name="title">
+     <string>帮助</string>
+    </property>
+    <addaction name="mAboutAction"/>
+    <addaction name="mUpdateAction"/>
+   </widget>
+   <widget class="QMenu" name="mSettingMenu">
+    <property name="title">
+     <string>设置</string>
+    </property>
+    <widget class="QMenu" name="menuUI_Language">
+     <property name="title">
+      <string>UI Language</string>
+     </property>
+     <addaction name="mEnglishAction"/>
+     <addaction name="mChineseAction"/>
+    </widget>
+    <addaction name="menuUI_Language"/>
+   </widget>
+   <addaction name="mTaskMenu"/>
+   <addaction name="mFileMenu"/>
+   <addaction name="mDownloadMenu"/>
+   <addaction name="mSettingMenu"/>
+   <addaction name="mHelpMenu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <action name="mAddNewTaskAction">
+   <property name="text">
+    <string>Add New Task(N)</string>
+   </property>
+   <property name="toolTip">
+    <string>add new task</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="mExitAction">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+   <property name="toolTip">
+    <string>exit</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="mStopDownloadAction">
+   <property name="text">
+    <string>Stop Download</string>
+   </property>
+   <property name="toolTip">
+    <string>stop download</string>
+   </property>
+  </action>
+  <action name="mOptionalAction">
+   <property name="text">
+    <string>Optional</string>
+   </property>
+   <property name="toolTip">
+    <string>optional</string>
+   </property>
+  </action>
+  <action name="mAboutAction">
+   <property name="text">
+    <string>About</string>
+   </property>
+   <property name="toolTip">
+    <string>about</string>
+   </property>
+  </action>
+  <action name="mUpdateAction">
+   <property name="text">
+    <string>Update</string>
+   </property>
+   <property name="toolTip">
+    <string>update</string>
+   </property>
+  </action>
+  <action name="mEnglishAction">
+   <property name="text">
+    <string>English</string>
+   </property>
+  </action>
+  <action name="mChineseAction">
+   <property name="text">
+    <string>中文简体</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
